@@ -1,0 +1,114 @@
+.structure {
+    width: 232px;
+    padding: 25px 20px 70px 20px;
+    background: #FFFFFF;
+    box-shadow: 0.648305px 1.94492px 7.77966px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    h2 {
+        font-weight: 600;
+        font-size: 16.2076px;
+        line-height: 19px;
+        color: #333150;
+        margin-bottom: 20px;
+    }
+      
+      .accordion-wrapper {
+        & + * {
+          margin-top: 20px;
+        }
+      }
+      
+      .accordion-item {
+        overflow: hidden;
+        transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+        height: auto;
+        max-height: 9999px;
+      }
+      
+      .accordion-item.collapsed {
+        max-height: 0;
+        transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+      }
+      
+      .accordion-title {
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #454460;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        &::after {
+          content: url('../../assets/icons/accordion-icon.svg');
+          width: 10px;
+          height: 6px;
+          margin-top: -10px;
+        }
+      
+        &.open {
+          &::after {
+            content: url('../../assets/icons/accordion-icon.svg');
+            width: 10px;
+            height: 6px;
+            margin-top: 10px;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            }
+        }
+      }
+      
+      .accordion-content {
+         ul {
+             margin-left: 20px;
+             margin-top: 10px;
+             li {
+                font-size: 12px;
+                line-height: 20px;
+                padding-right: 20px;
+                color: #828094;
+                list-style: disc;
+                cursor: pointer;
+
+                 .accordion-title {
+                    font-size: 12px;
+                    color: #828094;
+                    font-weight: 400;
+
+                    &::after { 
+                        content: '';
+                        display: none;
+                    }
+
+                    &::before { 
+                        content: '';
+                        display: none;
+                    }
+
+                    &.open {
+                        color: #507FF9;
+                    }
+                }
+
+                ul {
+                    margin-top: 5px;
+                    margin-bottom: 0;
+
+                    li {
+                        font-size: 11px;
+                        list-style: none;
+                    }
+                }
+             }
+         }
+      }
+      
+}

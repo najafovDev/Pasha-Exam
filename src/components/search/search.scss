@@ -1,0 +1,52 @@
+.search {
+    margin-top: 15px;
+
+    h2 {
+        font-size: 19px;
+    }
+
+    form {
+        margin-top: 17px;
+        display: flex;
+
+        input {
+            width: 236px;
+            height: 45px;
+            border: 1px solid #E3E8EF;
+            box-sizing: border-box;
+            border-radius: 7px;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ABB6C5;
+            padding-left: 15px;
+            margin-right: 30px;
+
+            &:focus {
+                outline: none !important;
+                border: 1px solid #4F9BFF;
+            }
+        }
+        
+        button {
+            width: 128px;
+            height: 45px;
+            background: linear-gradient(180deg, #00C6FF -144.44%, #0072FF 233.33%);
+            border-radius: 6px;
+            border: 0;
+            cursor: pointer;
+            font-size: 19px;
+            color: #fff;
+            margin-left: auto;
+
+            &:hover {
+                background: linear-gradient(180deg, #1088AA -144.44%, #0072FF 233.33%);
+            }
+
+            &:focus {
+                outline: none !important;
+                border: 1px solid #4F9BFF;
+            }
+        }
+ 
+    }
+}

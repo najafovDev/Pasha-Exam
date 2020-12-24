@@ -1,0 +1,74 @@
+.persons {
+    width: calc(100% - 232px);
+    margin-top: 30px;
+
+    .person {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    div {
+        .person {
+            &:before {
+                content: url('../../assets/icons/first-before-icon.svg');
+                position: absolute;
+                top: -50px;
+                left: 50%;
+            }
+        }
+    }
+    &__second-child {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 20px;
+
+        div:nth-child(1) .person {
+            &:before {
+                content: '' !important;
+                display: block;
+                width: 80px;
+                height: 100px;
+                position: absolute;
+                left: 50%;
+                top: -120px !important;
+                border-top: 3px dashed #C8D1E2;
+                border-left: 3px dashed #C8D1E2;
+            }
+        }
+        div:nth-child(2) .person  {
+            &:before {
+                content: '' !important;
+                display: block;
+                width: 80px;
+                height: 100px;
+                position: absolute;
+                left: 35px !important;
+                top: -120px !important;
+                border-top: 3px dashed #C8D1E2;
+                border-right: 3px dashed #C8D1E2;
+            }
+        }
+
+    }
+}
+.main-persons {
+    .persons__third-child {
+        div {
+            .person {
+                margin-top: 60px;
+                &:before {
+                    content: url('../../assets/icons/first-before-icon.svg') !important;
+                    position: absolute;
+                    top: -50px !important;
+                    left: 50% !important;
+                    width: 0;
+                    height: 0;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+

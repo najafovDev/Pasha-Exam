@@ -1,0 +1,117 @@
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    padding-left: 26px;
+    padding-top: 91px;
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+
+    &__user {
+        display: flex;
+        align-items: center;
+
+        &-profile {
+            width: 40px;
+            height: 40px;
+
+            img {
+                max-width: 100%;
+                border-radius: 100%;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -ms-border-radius: 100%;
+                -o-border-radius: 100%;
+            }       
+        }
+
+        &-info {
+            margin-left: 15px;
+            font-weight: 500;
+
+            &-name {
+                font-size: 14px;
+                color: #192A3E;
+                margin-bottom: 5px;
+            }
+            
+            &-email {
+                font-size: 11px;
+                color: #90A0B7;
+            }
+        }
+    }
+
+    &__nav {
+        margin-top: 40px;
+
+        ul {
+            li {
+                margin-bottom: 24px;
+                a {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #334D6E;
+                    text-decoration: none;
+                }
+
+                &:last-child {
+                    border-top: 1px solid #EBEFF2;
+                    padding-top: 26px;
+                    padding-left: 56px;
+                    margin-left: -56px;
+                }
+                &:hover {
+                    a {
+                        color: #4F9BFF;
+                    }
+                    .nav-icon {
+                        filter: invert(49%) sepia(53%) saturate(1542%) hue-rotate(195deg) brightness(104%) contrast(101%);
+                    }
+
+                }
+            }
+            .active {
+                a {
+                    color: #4F9BFF;
+                }
+            }
+        }
+    }
+
+    .nav-icon {
+        float: left;
+        margin-right: 16px;
+        width: 17px;
+        height: 17px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .dashboard-icon {
+        background-image: url('../../assets/icons/dashboard.svg');
+    }
+
+    .tasks-icon {
+        background-image: url('../../assets/icons/tasks.svg');
+    }
+
+    .email-icon {
+        background-image: url('../../assets/icons/email.svg');
+    }
+
+    .contact-icon {
+        background-image: url('../../assets/icons/contacts.svg');
+    }
+
+    .deals-icon {
+        background-image: url('../../assets/icons/deals.svg');
+    }
+
+    .chat-icon {
+        background-image: url('../../assets/icons/chat.svg');
+    }
+
+    .settings-icon {
+        background-image: url('../../assets/icons/settings.svg');
+    }
+}

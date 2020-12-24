@@ -1,0 +1,79 @@
+.persontabs {
+    width: calc(100% - 222px);
+    margin-left: 20px;
+    background: #FFFFFF;
+    box-shadow: 0.845026px 2.53508px 10.1403px rgba(0, 0, 0, 0.03);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.tab {
+  
+  &__titles{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    display: flex;
+    height: 62px;
+    border-bottom: 1px solid #EBEBEB;
+
+    &__title {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      margin-left: 40px;
+      color: #A5ABC2;
+      cursor: pointer;
+      padding-top: 25px;
+      border-bottom: 3px solid transparent;
+
+        &-active {
+            color: #507FF9;
+            border-bottom: 3px solid #507FF9;
+          
+        }
+    }  
+
+  }
+
+  &__content {
+    padding: 20px;
+    div {
+        background: #FCFCFF;
+        border-radius: 10px;
+        padding: 50px 25px;
+
+        p {
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.1em;
+            color: #7C8196;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 22px;
+            color: #6378C8;
+            margin-bottom: 30px;
+        }
+    }
+  }
+
+
+
+  &__close-tab {
+      margin: 15px 15px 0 auto;
+    span {
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      background-image: url('../../assets/icons/close-icon.svg');
+      display: inline-block
+    }
+  }
+}
+  
